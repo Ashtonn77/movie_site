@@ -7,11 +7,10 @@
     <title>The Movies Home</title>
 
     <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Inconsolata:400,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Notable&display=swap" rel="stylesheet">
 
+    <!--LIGHTBOX-->
+   
     <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
 
     <!-- FONT AWESOME ICONS -->
@@ -30,11 +29,17 @@
     <div class="outer-wrap">
       <header class="site-header">
         <div class="site-info">
-          <h1 class="site-title">Header</h1>
+          <h1 class="site-title">The Silver Screen</h1>
           <p class="site-description">Sit Back | Relax | Watch</p>
         </div>
 
-        <nav class="main-menu">The menu would go here</nav>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
       </header>
 
       <div class="content-area">
@@ -219,36 +224,179 @@
                     </div>
                   </div>
               </div>
+          </section><!--downloads-->
+
+          <section class="gallery">
+              <h2 class="section-header">Movies Gallery</h2>
+              <div class="gallery-imgs">
+                  
+                <div class="gallery-img">
+                    <a href="images/gallery_1.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_1.jpg" alt="1">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                    <a href="images/gallery_2.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_2.jpg" alt="2">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_3.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_3.jpg" alt="3">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_4.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_4.jpg" alt="4">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_5.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_5.jpg" alt="5">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_6.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_6.jpg" alt="6">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_7.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_7.jpg" alt="7">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_8.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_8.jpg" alt="8">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_9.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_9.jpg" alt="9">
+                    </a>
+                </div>
+                <div class="gallery-img">
+                     <a href="images/gallery_10.jpg" data-lightbox="gallery">
+                        <img src="images/gallery_10.jpg" alt="10">
+                    </a>
+                </div>
+
+
+
+              </div>
           </section>
 
         </main>
 
         <div class="sidebar-right">
-          <h1>sidebar goes here</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero harum,
-            commodi sint soluta dignissimos tempora aut. Optio labore velit,
-            eius libero unde nam veritatis voluptate aliquam dicta corrupti
-            sequi animi, numquam amet? Quisquam aspernatur similique, sapiente
-            aliquam nostrum ea odio mollitia pariatur ducimus architecto saepe
-            laboriosam provident illum officia sed illo accusantium magnam,
-            alias hic consequuntur laudantium minima. Natus expedita cupiditate
-            provident exercitationem, dolore illum quidem error ducimus tenetur
-            similique quam quis reiciendis quas dolores, tempora quisquam
-            consequatur? Qui sed velit excepturi quod, eum delectus cumque
-            pariatur ullam? Expedita dolorum a nam ex distinctio quidem
-            praesentium illo similique incidunt accusamus!
-          </p>
+          <div class="widget">
+              <div class="widget-content">
+                  <h3>Top Rated Movies</h3>
+                  <nav class="sidebar-menu">
+                      <ul>
+                          <li><a href="#">The Godfather</a></li>
+                          <li><a href="#">12 Angry Men</a></li>
+                          <li><a href="#">The Dark Knight</a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget-content">
+                <h3>Great Actors</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">Al Pacino</a></li>
+                        <li><a href="#">Leonardo Dicaprio</a></li>
+                        <li><a href="#">Denzel Washington</a></li>
+                        <li><a href="#">Ethan Hawk</a></li>
+                        <li><a href="#">Brad Pitt</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+
+
+        <div class="widget">
+            <div class="widget-content">
+                <h3>Best Directors</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">Stanley Kubrick</a></li>
+                        <li><a href="#">Christopher Nolan</a></li>
+                        <li><a href="#">Martin Scorsese</a></li>
+                        <li><a href="#">Alfred Hitchcock</a></li>
+                        <li><a href="#">Steven Spielberg</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="widget">
+            <div class="widget-content">
+                <h3>Categories</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Thriller</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="widget">
+            <div class="widget-content">
+                <h3>Upcoming Movies</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">The Tax Collector</a></li>
+                        <li><a href="#">Black Widow</a></li>
+                        <li><a href="#">Fast and Furious 15</a></li>
+                        <li><a href="#">Batman</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="widget">
+            <div class="widget-content">
+                <h3>Picks of the Week</h3>
+                <nav class="sidebar-menu">
+                    <ul>
+                        <li><a href="#">1. The King</a></li>
+                        <li><a href="#">2. Upgrade</a></li>
+                        <li><a href="#">3. Super Dark Times</a></li>
+                        <li><a href="#">4. Set It Up</a></li>
+                        <li><a href="#">5. Perfection</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        </div>
+
+
+
       </div>
 
       <footer class="site-footer">
-        <h1>Footer</h1>
+        designed by Ashton Naidoo <sup>&reg;</sup>
       </footer>
     </div>
 
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
+
+    <!--lightbox-->
+    <script type="text/javascript" src="js/lightbox.js"></script>
+
     <!-- Our Script File -->
     <script type="text/javascript" src="js/main.js"></script>
   </body>

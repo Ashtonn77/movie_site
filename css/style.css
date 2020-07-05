@@ -3,7 +3,7 @@ button,
 input,
 textarea {
   color: black;
-  font-family: "Asap", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   line-height: 1.8;
 }
@@ -11,7 +11,7 @@ textarea {
 body {
   background-color: #ededed;
   margin: 0;
-  font-family: "Asap", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 img {
@@ -20,19 +20,27 @@ img {
   height: auto;
 }
 
-header,
 footer {
   background-color: #111;
-  height: 100px;
+  color: #fff;
+  text-align: center;
+  padding: 0.8em;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+
+header {
+  background: #111;
+  font-family: "Notable", sans-serif;
 }
 
 .sidebar-right {
-  background-color: blue;
+  background-color: #ededed;
   color: #fff;
 }
 
 h1 {
-  color: red;
   margin: 0;
 }
 
@@ -73,18 +81,57 @@ p {
 
 .site-description {
   text-align: center;
-  color: #f6d200;
+  color: #a72608;
   font-size: 1.2em;
   font-style: italic;
   margin-top: -0.5em;
 }
-
+/*main menu*/
 .main-menu {
-  padding: 1em 1em;
   color: #111;
-  background-color: #f6d200;
+  background-color: #a72608;
 }
 
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.6em 1em;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.main-menu li a:hover {
+  background: #111;
+  color: #a72608;
+}
+
+@media screen and (min-width: 810px) {
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+
+  .site-description {
+    margin-top: -0.8em;
+  }
+}
+/*end main menu*/
 @media screen and (min-width: 1120px) {
   .site-title {
     font-size: 4em;
@@ -112,7 +159,7 @@ p {
 }
 
 .post-content h2 {
-  background: #f6d200;
+  background: #a72608;
   color: #111;
   padding: 20px;
   text-align: center;
@@ -245,7 +292,7 @@ p {
 }
 
 .download-rating {
-  background: #f6d200;
+  background: #a72608;
   padding: 1em 2em;
   color: #111;
   font-size: 0.9em;
@@ -301,3 +348,76 @@ p {
   }
 }
 /*end download section*/
+
+/*gallery section*/
+.gallery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+}
+
+.gallery-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px;
+}
+
+.gallery-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img:nth-child(4n + 1) {
+  flex-basis: 250px;
+}
+.gallery-img:nth-child(4n + 2) {
+  flex-basis: 325px;
+}
+.gallery-img:nth-child(4n + 3) {
+  flex-basis: 180px;
+}
+.gallery-img:nth-child(4n + 4) {
+  flex-basis: 380px;
+}
+/*end gallery section*/
+
+/*sidebar styles*/
+.sidebar-right {
+  padding: 2em;
+  color: #111;
+}
+
+.widget {
+  background: #fff;
+  margin-bottom: 2em;
+}
+
+.widget-content {
+  padding: 0.5em 2em;
+}
+
+.sidebar-right ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.sidebar-right ul a {
+  display: block;
+  padding-bottom: 0.4em;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 810px) and (max-width: 1120px) {
+  .sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .widget {
+    flex-basis: 48.8%;
+  }
+}
+/*end sidebar styles*/
