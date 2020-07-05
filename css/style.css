@@ -14,6 +14,12 @@ body {
   font-family: "Asap", sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 header,
 footer {
   background-color: #111;
@@ -34,7 +40,7 @@ p {
   margin: 0;
 }
 
-@media screen and (min-width: 1112px) {
+@media screen and (min-width: 1120px) {
   .content-area {
     display: flex;
   }
@@ -79,9 +85,64 @@ p {
   background-color: #f6d200;
 }
 
-@media screen and (min-width: 1112px) {
+@media screen and (min-width: 1120px) {
   .site-title {
     font-size: 4em;
   }
 }
 /*end header styles*/
+
+/*posts styles*/
+.main-content-area {
+  padding: 2em;
+}
+
+.post {
+  margin-bottom: 1em;
+  background: #fff;
+}
+
+.post a {
+  color: #111;
+  text-decoration: none;
+}
+
+.post-content {
+  padding: 0 40px 20px;
+}
+
+.post-content h2 {
+  background: #f6d200;
+  color: #111;
+  padding: 20px;
+  text-align: center;
+  margin: 0 -40px 30px;
+}
+
+/*medium size screens*/
+@media screen and (min-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post {
+    flex-basis: 49%; /*makes each card take up 49% leaving 2% space between*/
+  }
+}
+/*large size screen*/
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%;
+  }
+
+  .post-half {
+    flex-basis: 49%;
+  }
+
+  .post-full {
+    flex-basis: 100%;
+  }
+}
+/*end posts styles*/
